@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	
+	<!--自适应界面,如果出现,在某些设备出现界面偏小的话,检查一下有没有加入这句 -->
+	<meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+
+	<!--引入JS文件-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+			
+			$("#btn_jiegou").click(function(){
+				window.location.href ='structure.html';
+			});
+			
+			$("#btn_yinsu").click(function(){
+			    //js调用原生方法
+				window.hybrid.showToast("暂无页面，请稍后");
+			});
+			
+			$("#btn_jingzheng").click(function(){
+				window.hybrid.showToast("暂无页面，请稍后");
+			});
+		});
+		
+	</script>
+	
+	<style>
+	#btn_jiegou,#btn_yinsu,#btn_jingzheng{
+		width: 100%;
+		height: 60px;
+	}	
+		
+	</style>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<button id="btn_jiegou">结构分析</button>
+		<button id="btn_yinsu">因素分析</button>
+		<button id="btn_jingzheng">竞争分析</button>
+
+	</body>
+</html>
